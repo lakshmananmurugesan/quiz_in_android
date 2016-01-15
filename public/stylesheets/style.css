@@ -2,6 +2,20 @@ body {background: #EDEDED;}
 * {font-family: sans-serif;}
 .center {text-align: center;}
 
+table, td, th {
+    border: 3px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
 #main { width: 1000px; border: gray solid 10px; border-radius: 10px; background: white; margin-left:auto; margin-right:auto; padding: 10px;}
 #main h1 {font-size:1.5em;}
 #footer > p {font-size: 0.8em; text-align: center;}

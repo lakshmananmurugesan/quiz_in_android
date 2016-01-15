@@ -1,5 +1,11 @@
 class QuizController < ApplicationController
   def index
+    session[:email] = params['user']
+    session[:name] = params['name']
+  end
+
+  def score_board
+    @all_scores = Scoreboard.all
   end
   
   def start
@@ -10,7 +16,7 @@ class QuizController < ApplicationController
 	 session[:total]   = total
 	 session[:current] = 0
 	 session[:correct] = 0
-	 
+
 	 redirect_to :action => "question"
   end
 
@@ -55,6 +61,8 @@ class QuizController < ApplicationController
 	 @total   = session[:total]
 	 
 	 @score = @correct * 100 / @total
+   @scoreboard = Scoreboard.create(name: session[:name], email: session[:email], score: @score )
+   @scoreboard.save
   end
 
 end

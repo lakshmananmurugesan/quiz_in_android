@@ -34,6 +34,8 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Production: railsquiz-master" type="RailsRunConfigurationType" factoryName="Rails">
@@ -84,6 +86,8 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="test: railsquiz-master" type="RakeRunConfigurationType" factoryName="Rake">
@@ -140,6 +144,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.5.7, RVM: ruby-2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v3.0.5, RVM: ruby-2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.0.5, RVM: ruby-2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v0.9.2, RVM: ruby-2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.3, RVM: ruby-2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, RVM: ruby-2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.9, RVM: ruby-2.1.2) [gem]" level="application" />

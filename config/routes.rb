@@ -18,6 +18,8 @@ Quizapp::Application.routes.draw do
   
   post "choices/destroy"
 
+  get "quiz/score_board"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
