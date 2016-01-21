@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  college_name: MyString
+  department: MyString
+  current_year: MyString
+  year_passed_out: MyString
+  phone: MyString
+  email: MyString
+  native_place: MyString
+  workshop_feedback: MyString
+
+two:
+  name: MyString
+  college_name: MyString
+  department: MyString
+  current_year: MyString
+  year_passed_out: MyString
+  phone: MyString
+  email: MyString
+  native_place: MyString
+  workshop_feedback: MyString

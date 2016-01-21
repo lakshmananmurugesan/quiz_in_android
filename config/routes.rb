@@ -20,6 +20,10 @@ Quizapp::Application.routes.draw do
 
   get "quiz/score_board"
 
+  get "quiz/quiz_attendees"
+
+  post "quiz/quiz_attendees"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

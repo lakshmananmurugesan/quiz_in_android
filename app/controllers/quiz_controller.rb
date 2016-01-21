@@ -7,6 +7,15 @@ class QuizController < ApplicationController
   def score_board
     @all_scores = Scoreboard.all
   end
+
+  def quiz_attendees
+    @quiz_attendees = Quizattendees.new(params[:quizattendees])
+    puts @quiz_attendees
+    if !params[:quizattendees].nil?
+       Quizattendees.create(params[:quizattendees])
+       #redirect_to :action => "index"
+    end
+  end
   
   def start
 	 total = params[:number].to_i

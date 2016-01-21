@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160115145324) do
+ActiveRecord::Schema.define(:version => 20160120184527) do
 
   create_table "choices", :force => true do |t|
     t.string   "text"
@@ -22,6 +22,20 @@ ActiveRecord::Schema.define(:version => 20160115145324) do
 
   create_table "questions", :force => true do |t|
     t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "quizattendees", :force => true do |t|
+    t.string   "name"
+    t.string   "college_name"
+    t.string   "department"
+    t.string   "current_year"
+    t.string   "year_passed_out"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "native_place"
+    t.string   "workshop_feedback"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
