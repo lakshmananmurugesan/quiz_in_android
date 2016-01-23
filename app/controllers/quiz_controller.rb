@@ -1,6 +1,6 @@
 class QuizController < ApplicationController
   def index
-    session[:email] = params['user']
+    session[:email] = params['email']
     session[:name] = params['name']
   end
 
@@ -8,13 +8,13 @@ class QuizController < ApplicationController
     @all_scores = Scoreboard.all
   end
 
-  def quiz_attendees
-    @quiz_attendees = Quizattendees.new(params[:quizattendees])
-    puts @quiz_attendees
-    if !params[:quizattendees].nil?
-       Quizattendees.create(params[:quizattendees])
-       #redirect_to :action => "index"
-    end
+
+  def welcome
+
+  end
+
+  def attendee_list
+    @all_attendees = Quizattendees.all
   end
   
   def start

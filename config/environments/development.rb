@@ -23,5 +23,17 @@ Quizapp::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  config.action_mailer.default_url_options = { :host => 'http://localhost:8000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address              => 'smtp.gmail.com',
+      :port                 => 587,
+      :domain               => 'gmail.com',
+      :user_name            => 'lakshmanmurugesan@gmail.com',
+      :password             => 'SMACKTHAT',
+      :authentication       => 'login',
+      :enable_starttls_auto => true
+  }
+
 end
 

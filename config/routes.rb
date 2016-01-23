@@ -1,5 +1,7 @@
 Quizapp::Application.routes.draw do
 
+  root :to => "quiz#welcome"
+
   resources :questions
 
   get "quiz/index"
@@ -12,6 +14,8 @@ Quizapp::Application.routes.draw do
 
   post "quiz/answer"
 
+  get "quiz/attendee_list"
+
   get "quiz/end"
   
   post "choices/create"
@@ -20,10 +24,9 @@ Quizapp::Application.routes.draw do
 
   get "quiz/score_board"
 
-  get "quiz/quiz_attendees"
+  get "quiz/welcome"
 
-  post "quiz/quiz_attendees"
-
+  resources :quiz_attendees
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,34 @@
+<h1>Attendees List</h1>
+<div id="articles">
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>CollegeName</th>
+      <th>Dept</th>
+      <th>Year</th>
+      <th>PassedOut</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>StayAt</th>
+      <th>Feedback</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @all_attendees.each do |user| %>
+        <tr>
+          <td><%= user.name%></td>
+          <td><%= user.college_name%></td>
+          <td><%= user.department%></td>
+          <td><%= user.current_year%></td>
+          <td><%= user.year_passed_out %></td>
+          <td><%= user.phone%></td>
+          <td><%= user.email%></td>
+          <td><%= user.native_place%></td>
+          <td><%= user.workshop_feedback%></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

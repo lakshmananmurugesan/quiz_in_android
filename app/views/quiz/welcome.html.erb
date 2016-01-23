@@ -1,0 +1,13 @@
+<div style="padding-left: 150px">
+  <div class="container">
+    <h2>Welcome to Quiz !</h2>
+    <h3>Click here to proceed further.</h3>
+    <p>
+      <%= link_to 'Getting Started', new_quiz_attendee_path, class: 'btn btn-info btn-lg' %>
+    </p>
+  </div>
+</div>
+
+<% content_for(:title) do %>
+    Welcome 2 Quiz
+<% end %>
